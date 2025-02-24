@@ -1,3 +1,10 @@
+ocument.addEventListener("DOMContentLoaded", () => {
+  document.head.insertAdjacentHTML(
+    "beforeend",
+    '<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">'
+  );
+});
+
 function testaCor(){
     const cor = document.getElementById("cor").value;
 
